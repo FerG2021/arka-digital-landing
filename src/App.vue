@@ -1,9 +1,9 @@
 <script setup>
 import { nextTick, onBeforeUnmount, onMounted, watch } from 'vue';
-import AboutPage from './components/AboutPage.vue';
-import HomePage from './components/HomePage.vue';
-import SiteFooter from './components/SiteFooter.vue';
-import SiteHeader from './components/SiteHeader.vue';
+import AboutPage from './modules/AboutPage.vue';
+import HomePage from './modules/HomePage.vue';
+import SiteFooter from './modules/SiteFooter.vue';
+import SiteHeader from './modules/SiteHeader.vue';
 import { useLandingStore } from './stores/landing';
 
 const store = useLandingStore();
