@@ -1,0 +1,65 @@
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #09182c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #082955;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #67d7b1;
+}
+
+.full-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5.5rem;
+    padding-bottom: 3rem;
+}
+
+.bg-tech-grid {
+    background-image:
+        linear-gradient(to right, rgb(103 215 177 / 5%) 1px, transparent 1px),
+        linear-gradient(to bottom, rgb(103 215 177 / 5%) 1px, transparent 1px);
+    background-size: 48px 48px;
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+        opacity 0.7s ease-out,
+        transform 0.7s ease-out;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.view-transition {
+    animation: viewFadeIn 0.35s ease-out forwards;
+}
+
+@keyframes viewFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    margin: 0;
+}
