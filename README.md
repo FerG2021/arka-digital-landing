@@ -30,3 +30,4 @@ npm run preview
 - `src/composables/useLandingNavigation.js`: navegación entre secciones y páginas.
 
 Los botones y campos de contacto usan componentes de PrimeVue. El formulario mantiene el comportamiento de demostración de la landing original; para enviar mensajes reales hay que conectarlo a un servicio o API.
+# arka-digital-landing
